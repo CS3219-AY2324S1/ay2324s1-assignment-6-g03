@@ -1,6 +1,6 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/UxpU_KWG)
 
-# LeetCode Scraper Lambda
+# CS3219 Assignment 6 G03 - LeetCode Scraper Lambda
 
 This script is designed to scrape LeetCode questions and save them to a MongoDB database. It provides functionalities such as parsing the LeetCode questions sitemap XML file, scraping question details from individual URLs, and saving the scraped data to MongoDB. It is designed to be run as an AWS Lambda function, but can be executed locally. Deployment to AWS is done using Pulumi.
 
