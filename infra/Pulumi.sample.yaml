@@ -1,0 +1,6 @@
+config:
+  aws:region: ap-southeast-1
+  question-service-serverless:COOLDOWN_PERIOD: "864000"
+  question-service-serverless:MONGO_CONNECTION_STRING:
+    secure: AAABAFDbHSJF+eR7ZQVA2H+Bft7GWX25nOMHAjulBEEVq8o6gDwqvuWk76plgsM+AA44vZ/RscGrn1gPksNI2NTrXs+uVPpodojbQXh18NeuS4DZmczJ3wkSRyjDJcAg0n7lwu4Khn8UJ3dyzIQyFA==
+  question-service-serverless:RATE_LIMIT: "60"
