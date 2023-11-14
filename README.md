@@ -55,6 +55,28 @@ docker-compose up
 
 This will invoke the `handler` function and print the response.
 
+### Troubleshooting
+
+1. If you encounter the following error:
+
+```bash
+/bin/sh: 1: ./entrypoint.sh: not found
+```
+
+You may need to change the line endings of the `entrypoint.sh` file in `/app` to `LF` instead of `CRLF`. This tends to happen when the host machine is Windows.
+
+2. If you encounter the following error:
+
+```bash
+./entrypoint.sh: permission denied
+```
+
+You may need to give the `entrypoint.sh` file in `/app` executable permissions in your local directory. To do so, run:
+
+```bash
+chmod +x entrypoint.sh
+```
+
 ## Deployment to AWS with Pulumi
 
 ### AWS Services
