@@ -10,9 +10,11 @@ RUN apt-get update && apt-get install -y curl
 COPY . .
 
 # Make the entrypoint script executable
+COPY ./entrypoint.sh /app/
 RUN chmod +x /app/entrypoint.sh
+
 
 EXPOSE 80
 
 # Set the entrypoint script as the entrypoint for the container
-ENTRYPOINT ./entrypoint.sh
+ENTRYPOINT ["/app/entrypoint.sh"]
